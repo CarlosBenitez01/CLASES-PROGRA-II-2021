@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Empleado";
+}
+
+<h2>Empleado</h2>
+
+@using (Html.BeginForm("Recibo", "Empleado", FormMethod.Post))
+{
+    <label for="nombre">Nombre: </label>
+    <br>
+    <input type="text" name="nombre" required>
+    <br>
+    <br>
+
+    <label for="valhora">Valor de hora: </label>
+    <br>
+    <input type="text" name="valhora" required>
+    <br>
+    <br>
+
+    <label for="antiguedad">Antiguedad: </label>
+    <br>
+    <input type="text" name="antiguedad" required>
+    <br>
+    <br>
+
+    <label for="horast">Horas trabajadas en el mes: </label>
+    <br>
+    <input type="text" name="horast" required>
+    <br>
+    <br>
+
+    <input type="submit" value="Generar recibo">
+}

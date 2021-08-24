@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+
+@using (Html.BeginForm("Login", "Login", FormMethod.Post))
+{
+    <label for="usu">Usuario: </label>
+    <input type="text" name="usu" required>
+    <br>
+
+    <label for="dui">DUI: </label>
+    <input type="text" name="dui" required>
+    <br>
+
+    <input type="submit" value="Entrar">
+}

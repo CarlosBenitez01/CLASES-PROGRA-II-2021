@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Recibo";
+}
+
+<h2>Recibo</h2>
+
+<table table class="table table-dark table-striped">
+    <th>
+        Nombre
+    </th>
+    <th>
+        Antiguedad
+    </th>
+    <th>
+        Valor por hora
+    </th>
+    <th>
+        Total a cobrar
+    </th>
+    <th>
+        Total del descuento
+    </th>
+    <th>
+        Total con descuento
+    </th>
+    <tbody>
+        <tr>
+            <td><span>@ViewBag.nombre</span></td>
+            <td><span>@ViewBag.antique</span></td>
+            <td><span>@ViewBag.valhora</span></td>
+            <td><span>@ViewBag.totacobrar</span></td>
+            <td><span>@ViewBag.totdeldescuento</span></td>
+            <td><span>@ViewBag.totcondescuento</span></td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>@Html.ActionLink("Regresar", "IrAEmpleado")</h3>
+
